@@ -51,6 +51,6 @@ filtered_data = raw_data[
 sorted_data = filtered_data.sort_values(["Volume"], ascending=False)
 
 #converts dataframe object to a csv file and exports with unique file name
-sorted_data.to_csv(f"refined stocks data/{year}-present_refined_stocks_data_{'_'.join(sectors)}.csv", index=False)
+sorted_data.to_csv(f"{year}-present_refined_stocks_data_{'_'.join(sectors)}.csv", index=False)
 
 print(sorted_data)
